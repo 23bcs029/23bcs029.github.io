@@ -2,15 +2,99 @@
 <html>
 <head>
     <title>Elavarasi Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .hero {
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        .section {
+            padding: 50px 20px;
+            background: white;
+            color: black;
+        }
+
+        .skills li {
+            list-style: none;
+            padding: 10px;
+            background: #667eea;
+            margin: 10px auto;
+            width: 200px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        footer {
+            background: black;
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
     <h1>Hello, I'm Elavarasi 👋</h1>
-    <p>Computer Science Student</p>
+    <p>Computer Science Student | Python Developer</p>
+</div>
+
+<div class="section" id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate Computer Science student interested in Web Development and Python programming.</p>
+</div>
+
+<div class="section" id="skills">
     <h2>My Skills</h2>
-    <ul>
+    <ul class="skills">
         <li>Python</li>
         <li>HTML & CSS</li>
         <li>Django</li>
     </ul>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourmail@gmail.com</p>
+    <p>GitHub: github.com/23bcs029</p>
+</div>
+
+<footer>
+    © 2026 Elavarasi | Portfolio Website
+</footer>
+
 </body>
 </html>
