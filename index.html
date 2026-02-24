@@ -2,18 +2,27 @@
 <html>
 <head>
     <title>Elavarasi Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #667eea, #764ba2);
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             text-align: center;
         }
 
         nav {
-            background: rgba(0,0,0,0.3);
+            background: rgba(0,0,0,0.4);
             padding: 15px;
+            position: sticky;
+            top: 0;
         }
 
         nav a {
@@ -31,12 +40,31 @@
             padding: 80px 20px;
         }
 
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+        }
+
         h1 {
-            font-size: 45px;
+            font-size: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: yellow;
+            color: black;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
         }
 
         .section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             background: white;
             color: black;
         }
@@ -51,10 +79,43 @@
             color: white;
         }
 
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f4f4f4;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: bold;
+        }
+
         footer {
             background: black;
             padding: 20px;
         }
+
+        @media(max-width:768px){
+            .projects{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
     </style>
 </head>
 
@@ -64,17 +125,21 @@
     <a href="#">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
+    <!-- Replace with your photo link -->
+    <img src="https://via.placeholder.com/150" alt="Profile Photo">
     <h1>Hello, I'm Elavarasi 👋</h1>
-    <p>Computer Science Student | Python Developer</p>
+    <p>Computer Science Student | Python & Django Developer</p>
+    <a href="#" class="btn">Download Resume</a>
 </div>
 
 <div class="section" id="about">
     <h2>About Me</h2>
-    <p>I am a passionate Computer Science student interested in Web Development and Python programming.</p>
+    <p>I am passionate about building web applications and solving real-world problems using Python and Django.</p>
 </div>
 
 <div class="section" id="skills">
@@ -83,7 +148,31 @@
         <li>Python</li>
         <li>HTML & CSS</li>
         <li>Django</li>
+        <li>Git & GitHub</li>
     </ul>
+</div>
+
+<div class="section" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Smart DigiLocker</h3>
+            <p>Django based document storage system.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Restaurant Reservation System</h3>
+            <p>Online table booking system using PHP & DBMS.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Fake News Detection</h3>
+            <p>Deep Learning based text classification system.</p>
+            <a href="#">View Project</a>
+        </div>
+    </div>
 </div>
 
 <div class="section" id="contact">
