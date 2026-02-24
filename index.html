@@ -3,7 +3,7 @@
 <head>
     <title>Elavarasi Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <style>
         * {
             margin: 0;
@@ -41,10 +41,12 @@
         }
 
         .hero img {
-            width: 150px;
-            height: 150px;
+            width: 170px;
+            height: 170px;
             border-radius: 50%;
-            border: 4px solid white;
+            border: 5px solid white;
+            object-fit: cover;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
             margin-bottom: 20px;
         }
 
@@ -63,6 +65,10 @@
             font-weight: bold;
         }
 
+        .btn:hover {
+            background: orange;
+        }
+
         .section {
             padding: 60px 20px;
             background: white;
@@ -74,7 +80,7 @@
             padding: 10px;
             background: #667eea;
             margin: 10px auto;
-            width: 200px;
+            width: 220px;
             border-radius: 20px;
             color: white;
         }
@@ -89,7 +95,7 @@
             background: #f4f4f4;
             margin: 15px;
             padding: 20px;
-            width: 250px;
+            width: 260px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
@@ -130,16 +136,22 @@
 </nav>
 
 <div class="hero">
-    <!-- Replace with your photo link -->
-    <img src="profile.jpeg" alt="Profile Photo">
+    <!-- Make sure profile.jpeg is uploaded in same folder -->
+    <img src="profile.jpeg" alt="Elavarasi Photo">
+
     <h1>Hello, I'm Elavarasi 👋</h1>
     <p>Computer Science Student | Python & Django Developer</p>
-    <a href="#" class="btn">Download Resume</a>
+
+    <!-- Upload resume file and update name if needed -->
+    <a href="Elavarasi_Resume.pdf" class="btn" download>Download Resume</a>
 </div>
 
 <div class="section" id="about">
     <h2>About Me</h2>
-    <p>I am passionate about building web applications and solving real-world problems using Python and Django.</p>
+    <p>
+        I am a passionate Computer Science student interested in Web Development,
+        Backend Development and building real-world applications using Python and Django.
+    </p>
 </div>
 
 <div class="section" id="skills">
@@ -155,6 +167,7 @@
 <div class="section" id="projects">
     <h2>My Projects</h2>
     <div class="projects">
+
         <div class="card">
             <h3>Smart DigiLocker</h3>
             <p>Django based document storage system.</p>
@@ -172,13 +185,14 @@
             <p>Deep Learning based text classification system.</p>
             <a href="#">View Project</a>
         </div>
+
     </div>
 </div>
 
 <div class="section" id="contact">
     <h2>Contact Me</h2>
     <p>Email: yourmail@gmail.com</p>
-    <p>GitHub: github.com/23bcs029</p>
+    <p>GitHub: https://github.com/23bcs029</p>
 </div>
 
 <footer>
